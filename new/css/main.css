@@ -587,7 +587,7 @@ a:hover {
     display: block;
   }
 }
-.col-sm-6, .col-md-4 {
+.assorted-padding-clear {
   padding-left: 0;
   padding-right: 0;
 }
