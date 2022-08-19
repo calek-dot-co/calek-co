@@ -66,11 +66,6 @@ body {
     font-size: 24px;
   }
 }
-@media (min-width: 600px) {
-  .pointer-events {
-    pointer-events: none;
-  }
-}
 
 h1, h2, p {
   color: #fff;
@@ -188,6 +183,19 @@ h1, h2, p {
   font-size: 18px;
   font-family: 'Circular Light';
 }
+@media (max-width: 600px) {
+  .project-name {
+    font-size: 24px;
+  }
+  .project-description {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .project-hint {
+    font-size: 16px;
+  }
+}
+
 
 
 
@@ -300,7 +308,19 @@ h1, h2, p {
       opacity: 0;
     }
 
-
+.pointer-events {
+  pointer-events: none;
+}
+/* @media (max-width: 600px) {
+  .pointer-events {
+    pointer-events: auto;
+  }
+} */
+@media (pointer:coarse) {
+  .pointer-events {
+    pointer-events: auto;
+  }
+}
 
 /* ---------   Homepage SVGs   -------- */
 
@@ -426,8 +446,9 @@ h1, h2, p {
 
 .arrow-explore {
   width: 80px;
-  margin-left: 10px;
+  margin-top: 0;
 }
+
 
 
 /* ---------   Projects Small (2col, 1 row)   -------- */
