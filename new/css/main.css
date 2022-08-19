@@ -218,11 +218,16 @@ h1, h2, p {
   max-width: 3000px;
   overflow: visible;
 }
+@media (min-width: 601px) {
+  .max-row {
+    margin: auto;
+  }
+}
 .max-row {
   max-width: 1800px;
-  margin: auto;
   overflow: visible;
 }
+
 
 
 .body-light {
@@ -439,10 +444,24 @@ h1, h2, p {
   width: 40vw;
   max-width: 800px;
 }
-.img-horizontal, .img-horizontal-small, .img-square-small, .img-square-large, .img-vertical {
-  /* border: solid 1px; */
-  margin-right: 50px;
-}
+    @media (max-width: 600px) {
+      .img-horizontal {
+        width: 100vw;
+      }
+      .img-horizontal-small {
+        width: 75vw;
+      }
+      .img-square-small {
+        width: 50vw;
+      }
+      .img-square-large {
+        width: 66.78vw;
+      }
+      .img-vertical {
+        width: 50vw;
+      }
+    }
+
 
 .arrow-explore {
   width: 80px;
@@ -458,17 +477,37 @@ h1, h2, p {
   margin-left: 6vw;
   margin-right: 6vw;
   display: flex;
+  width: 100%;
 }
+    @media (max-width: 600px) {
+      .project-wrapper-static {
+        display: block;
+      }
+    }
 .static-description {
   display: block;
   width: 400px;
   margin-right: 50px;
 }
+    @media (max-width: 600px) {
+      .static-description {
+        display: block;
+        width: 100%;
+        margin: 0;
+      }
+    }
 .static-description-right {
   display: block;
   width: 500px;
   margin-left: 50px;
 }
+    @media (max-width: 600px) {
+      .static-description-right {
+        display: block;
+        width: 100%;
+        margin: 0;
+      }
+    }
 .static-image {
   flex: 1;
 }
@@ -479,7 +518,7 @@ h1, h2, p {
   margin-right: 6vw;
 }
 .assorted-image-spacer {
-  margin-bottom: 2vw;
+  margin-top: 6vw;
 }
 
 
@@ -534,17 +573,21 @@ a:hover {
   padding-left: 30px;
   padding-right: 30px;
 }
-@media (max-width: 600px) {
-  img {
-    margin-top: 4vw;
-  }
-}
 .mobile-project {
   padding-top: 10vw;
   padding-bottom: 10vw;
 }
-.youtube-small {
-  max-width: 400px;
-  width: 25vw;
-  min-width: 200px;
+@media (min-width: 601px) {
+  .youtube-small {
+    max-width: 400px;
+    width: 25vw;
+    min-width: 200px;
+  }
+  .urbanic {
+    display: block;
+  }
+}
+.col-sm-6, .col-md-4 {
+  padding-left: 0;
+  padding-right: 0;
 }
