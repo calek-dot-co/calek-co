@@ -187,6 +187,9 @@ h1, h2, p {
   .project-name {
     font-size: 24px;
   }
+  .project-name-assorted {
+    margin-top: 15px;
+  }
   .project-description {
     font-size: 16px;
     line-height: 1.2;
@@ -520,6 +523,11 @@ h1, h2, p {
 .assorted-image-spacer {
   margin-top: 6vw;
 }
+    @media (max-width: 600px) {
+      .assorted-image-spacer {
+        margin-top: 12vw;
+      }
+    }
 
 
 /* ---------   Projects Large (1col, 2 rows)   -------- */
