@@ -470,6 +470,12 @@ h1, h2, p {
   width: 80px;
   margin-top: 0;
 }
+@media (max-width: 600px) {
+  .arrow-explore {
+    width: 60px;
+  }
+}
+
 
 
 
