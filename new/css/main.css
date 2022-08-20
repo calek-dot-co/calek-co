@@ -169,6 +169,9 @@ h1, h2, p {
   font-size: 30px;
   font-family: 'Circular Light';
 }
+.project-name-assorted {
+  margin-top: 15px;
+}
 .project-description {
   color: #000;
   font-size: 18px;
@@ -187,9 +190,7 @@ h1, h2, p {
   .project-name {
     font-size: 24px;
   }
-  .project-name-assorted {
-    margin-top: 15px;
-  }
+
   .project-description {
     font-size: 16px;
     line-height: 1.2;
@@ -539,7 +540,7 @@ h1, h2, p {
 /* ---------   Projects Large (1col, 2 rows)   -------- */
 .static-image-full {
   width: 100%;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 .project-wrapper-static-full {
   margin-bottom: 12vw;
