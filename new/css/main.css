@@ -368,17 +368,17 @@ h1, h2, p {
 
 .text1 {
   animation-name: text1;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: ease-out;
 }
     @keyframes text1 {
       0%   {opacity:0;}
-      33%  {opacity:0;}
+      25%  {opacity:0;}
       100% {opacity:1;}
     }
 .text2 {
   animation-name: text2;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: ease-out;
 }
     @keyframes text2 {
