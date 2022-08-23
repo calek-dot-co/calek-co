@@ -319,17 +319,20 @@ h1, h2, p {
 
 .pointer-events {
   pointer-events: none;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
 }
 /* @media (max-width: 600px) {
   .pointer-events {
     pointer-events: auto;
   }
 } */
-@media (pointer:coarse) {
+/* @media (pointer:coarse) {
   .pointer-events {
     pointer-events: auto;
   }
-}
+} */
+
 
 /* ---------   Homepage SVGs   -------- */
 
