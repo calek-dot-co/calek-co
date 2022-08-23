@@ -46,6 +46,7 @@
 
 html {
   overflow-x: hidden !important;
+  width: 100vw;
 }
 i {
   color: #9B9B9B;
@@ -58,7 +59,7 @@ img {
 body {
   margin: 0;
   background-color: #000;
-  max-width: 100%;
+  max-width: 100vw;
   overflow-x: hidden !important;
 }
 @media (max-width: 600px) {
@@ -317,21 +318,26 @@ h1, h2, p {
       opacity: 0;
     }
 
+/* -- Makes content un-clickable -- */
 .pointer-events {
   pointer-events: none;
   -webkit-overflow-scrolling: touch;
   overflow-y: scroll;
 }
+
+/* -- Mobile fixes since scroll is disabled -- */
+/* -- PX based fix -- */
 /* @media (max-width: 600px) {
   .pointer-events {
     pointer-events: auto;
   }
 } */
-/* @media (pointer:coarse) {
+/* -- Input based fix -- */
+@media (pointer:coarse) {
   .pointer-events {
     pointer-events: auto;
   }
-} */
+}
 
 
 /* ---------   Homepage SVGs   -------- */
@@ -612,4 +618,9 @@ a:hover {
 
 .mobile-margin-top {
   margin-top: 30px;
+}
+
+/* ---------   Desktop Fixes   -------- */
+.padding-left-15 {
+  padding-left: 15px;
 }
