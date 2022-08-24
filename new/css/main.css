@@ -222,19 +222,6 @@ h1, h2, p {
 .container-fluid {
   max-width: 1800px;
 }
-.max-width {
-  max-width: 3000px;
-  overflow: visible;
-}
-@media (min-width: 601px) {
-  .max-row {
-    margin: auto;
-  }
-}
-.max-row {
-  max-width: 1800px;
-  overflow: visible;
-}
 
 .header {
   padding: 6vw;
@@ -305,7 +292,6 @@ h1, h2, p {
   height: 100%;
   width: 100%;
   z-index: 100;
-  pointer-events: auto;
   animation-name: fade;
   animation-duration: 4s;
 }
@@ -321,26 +307,6 @@ h1, h2, p {
       opacity: 0;
     }
 
-/* -- Makes content un-clickable -- */
-/* .pointer-events {
-  pointer-events: none;
-  -webkit-overflow-scrolling: touch;
-  overflow-y: scroll;
-} */
-
-/* -- Mobile fixes since scroll is disabled -- */
-/* -- PX based fix -- */
-/* @media (max-width: 600px) {
-  .pointer-events {
-    pointer-events: auto;
-  }
-} */
-/* -- Input based fix -- */
-/* @media (pointer:coarse) {
-  .pointer-events {
-    pointer-events: auto;
-  }
-} */
 
 
 /* ---------   Homepage SVGs   -------- */
@@ -407,11 +373,6 @@ h1, h2, p {
 
 /* ---------   Slider   -------- */
 
-
-.project-wrapper {
-  margin: 0;
-  padding: 0;
-}
 .slider-wrapper {
   position: relative;
   margin-bottom: 12vw;
@@ -423,7 +384,6 @@ h1, h2, p {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
-
 }
 .row, .max-row, .col-md-12, .project-wrapper, .slider-wrapper, .swiper, .mySwiper, .swiper-wrapper {
   overflow: visible !important;
@@ -497,6 +457,10 @@ h1, h2, p {
 
 /* ---------   Projects Small (2col, 1 row)   -------- */
 
+.project-wrapper {
+  margin: 0;
+  padding: 0;
+}
 .project-wrapper-static {
   margin-bottom: 12vw;
   margin-left: 6vw;
@@ -588,10 +552,6 @@ video {
 @media (max-width: 600px) {
   .hidden-mobile {
     display: none;
-  }
-  .assorted-padding-clear {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 @media (min-width: 601px) {
