@@ -19802,14 +19802,14 @@
         _.addEventListener("mouseover", (e) => {
             if (0 === e.button) {
                 const t = (e.clientX / _.clientWidth) * A.x,
-                    n = 1 - (e.clientY + window.scrollY) / _.clientHeight;
+                    n = 1 - (e.clientY / _.clientHeight);
                 X.push({ id: "mouse", input: new i.Vector4(t, n, 0, 0) });
             }
         }),
             _.addEventListener("mousemove", (e) => {
                 if (X.length > 0) {
                     const t = (e.clientX / _.clientWidth) * A.x,
-                        n = 1 - (e.clientY + window.scrollY) / _.clientHeight;
+                        n = 1 - (e.clientY / _.clientHeight);
                     X[0].input.setZ(t - X[0].input.x).setW(n - X[0].input.y), X[0].input.setX(t).setY(n);
                 }
             }),
@@ -19819,7 +19819,7 @@
             _.addEventListener("touchstart", (e) => {
                 for (const t of e.changedTouches) {
                     const e = (t.clientX / _.clientWidth) * A.x,
-                        n = 1 - (t.clientY + window.scrollY) / _.clientHeight;
+                        n = 1 - (t.clientY / _.clientHeight);
                     X.push({ id: t.identifier, input: new i.Vector4(e, n, 0, 0) });
                 }
             }),
@@ -19829,7 +19829,7 @@
                     const e = X.find((e) => e.id === t.identifier);
                     if (void 0 !== e) {
                         const n = (t.clientX / _.clientWidth) * A.x,
-                            i = 1 - (t.clientY + window.scrollY) / _.clientHeight;
+                            i = 1 - (t.clientY / _.clientHeight);
                         e.input.setZ(n - e.input.x).setW(i - e.input.y), e.input.setX(n).setY(i);
                     }
                 }
