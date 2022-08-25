@@ -19824,7 +19824,7 @@
                 }
             }),
             _.addEventListener("touchmove", (e) => {
-                // e.preventDefault();
+                e.preventDefault();
                 for (const t of e.changedTouches) {
                     const e = X.find((e) => e.id === t.identifier);
                     if (void 0 !== e) {

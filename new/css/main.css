@@ -45,11 +45,7 @@
 
 html {
   overflow-x: hidden !important;
-  overflow-y: scroll;
   width: 100vw;
-}
-i {
-  color: #9B9B9B;
 }
 img {
   width: 100%;
@@ -287,7 +283,7 @@ h1, h2, p {
 /* ---------   Homepage Background   -------- */
 
 .background {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
@@ -296,9 +292,6 @@ h1, h2, p {
   animation-name: fade;
   animation-duration: 4s;
 }
-    canvas {
-      position: fixed;
-    }
     @keyframes fade {
       0%   {opacity:0;}
       40%  {opacity:0;}
