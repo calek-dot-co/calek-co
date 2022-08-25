@@ -231,6 +231,11 @@ h1, h2, p {
         height: 60vw;
       }
     }
+    @media (min-width: 1400px) {
+      .header {
+        height: 30vw;
+      }
+    }
 
 @media (min-width: 768px) {
   .menu-wrapper {
@@ -250,6 +255,11 @@ h1, h2, p {
       .about {
         padding: 3vw;
         padding-bottom: 16vw;
+      }
+    }
+    @media (min-width: 1400px) {
+      .about {
+        padding-top: 0;
       }
     }
 
@@ -359,6 +369,16 @@ h1, h2, p {
     @keyframes text2 {
       0%   {opacity:0;}
       50%  {opacity:0;}
+      100% {opacity:1;}
+    }
+.text3 {
+  animation-name: text3;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+    @keyframes text3 {
+      0%   {opacity:0;}
+      66%  {opacity:0;}
       100% {opacity:1;}
     }
 
