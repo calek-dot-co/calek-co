@@ -19698,14 +19698,14 @@
         })();
         const x = {
                 Simulate: !0,
-                Iterations: 32,
-                Radius: .25,
+                Iterations: 16,
+                Radius: 0.2,
                 Scale: 0.2,
-                ColorDecay: 0.01,
+                ColorDecay: 0,
                 Boundaries: !0,
                 AddColor: !0,
                 Visualize: "Velocity",
-                Mode: "Spectral",
+                Mode: "Luminance",
                 Timestep: "1/60",
                 Reset: () => {
                     z.update({ inputTexture: U, velocity: U }), F.update({ inputTexture: B, velocity: U }), (D = void 0), (O = void 0);
@@ -19799,7 +19799,7 @@
                 72 === e.keyCode && (b.dom.hidden = !b.dom.hidden);
             });
         let X = [];
-        _.addEventListener("mousedown", (e) => {
+        _.addEventListener("mouseover", (e) => {
             if (0 === e.button) {
                 const t = (e.clientX / _.clientWidth) * A.x,
                     n = 1 - (e.clientY / _.clientHeight);
@@ -19813,7 +19813,7 @@
                     X[0].input.setZ(t - X[0].input.x).setW(n - X[0].input.y), X[0].input.setX(t).setY(n);
                 }
             }),
-            _.addEventListener("mouseup", (e) => {
+            _.addEventListener("mouseout", (e) => {
                 0 === e.button && X.pop();
             }),
             _.addEventListener("touchstart", (e) => {
