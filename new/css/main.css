@@ -231,7 +231,7 @@ h1, h2, p {
       .header {
         padding: 3vw;
         padding-top: 5vw;
-        height: 50vw;
+        height: 60vw;
       }
     }
 
@@ -511,15 +511,12 @@ h1, h2, p {
     @media (max-width: 600px) {
       .assorted-wrapper {
         margin-left: 3vw;
-        margin-right: s;
+        margin-right: 3vw;
       }
     }
-.assorted-image-spacer {
-  margin-top: 6vw;
-}
     @media (max-width: 600px) {
       .assorted-image-spacer {
-        margin-top: 12vw;
+        margin-top: 6vw;
       }
     }
 
