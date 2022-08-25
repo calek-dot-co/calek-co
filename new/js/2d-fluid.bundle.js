@@ -19805,6 +19805,7 @@
                     n = 1 - (e.clientY / _.clientHeight);
                 X.push({ id: "mouse", input: new i.Vector4(t, n, 0, 0) });
             }
+            console.log("Mouse is over");
         }),
             _.addEventListener("mousemove", (e) => {
                 if (X.length > 0) {
@@ -19812,7 +19813,6 @@
                         n = 1 - (e.clientY / _.clientHeight);
                     X[0].input.setZ(t - X[0].input.x).setW(n - X[0].input.y), X[0].input.setX(t).setY(n);
                 }
-                console.log('Mousemove');
             }),
             _.addEventListener("mouseout", (e) => {
                 0 === e.button && X.pop();
@@ -20862,7 +20862,7 @@
                 );
             })(),
             M = {};
-        a.each({ HTMLEvents: ["change"], MouseEvents: ["click", "mousemove", "mouseup", "mouseover"], KeyboardEvents: ["keydown"] }, function (e, t) {
+        a.each({ HTMLEvents: ["change"], MouseEvents: ["click", "mousemove", "mouseup", "mousedown", "mouseover", "mouseout"], KeyboardEvents: ["keydown"] }, function (e, t) {
             a.each(e, function (e) {
                 M[e] = t;
             });
