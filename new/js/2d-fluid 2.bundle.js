@@ -19698,11 +19698,11 @@
         })();
         const x = {
                 Simulate: !0,
-                Iterations: 16,
-                Radius: 0.2,
+                Iterations: 32,
+                Radius: .25,
                 Scale: 0.2,
-                ColorDecay: 0,
-                Boundaries: !0,
+                ColorDecay: 0.01,
+                Boundaries: 0,
                 AddColor: !0,
                 Visualize: "Velocity",
                 Mode: "Luminance",
@@ -20861,7 +20861,7 @@
                 );
             })(),
             M = {};
-        a.each({ HTMLEvents: ["change"], MouseEvents: ["click", "mousemove", "mouseup", "mouseover"], KeyboardEvents: ["keydown"] }, function (e, t) {
+        a.each({ HTMLEvents: ["change"], MouseEvents: ["click", "mousemove", "mouseup", "mousedown", "mouseover", "mouseout"], KeyboardEvents: ["keydown"] }, function (e, t) {
             a.each(e, function (e) {
                 M[e] = t;
             });

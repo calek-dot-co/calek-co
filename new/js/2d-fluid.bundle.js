@@ -19702,7 +19702,7 @@
                 Radius: .25,
                 Scale: 0.2,
                 ColorDecay: 0.01,
-                Boundaries: !0,
+                Boundaries: 0,
                 AddColor: !0,
                 Visualize: "Velocity",
                 Mode: "Luminance",
@@ -19805,7 +19805,6 @@
                     n = 1 - (e.clientY / _.clientHeight);
                 X.push({ id: "mouse", input: new i.Vector4(t, n, 0, 0) });
             }
-            console.log("Mouse is over");
         }),
             _.addEventListener("mousemove", (e) => {
                 if (X.length > 0) {
