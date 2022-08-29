@@ -314,6 +314,7 @@ h1, h2, p {
 
 
 
+
 /* ---------   Homepage Background   -------- */
 
 .background {
@@ -324,11 +325,11 @@ h1, h2, p {
   width: 100%;
   z-index: 100;
   animation-name: fade;
-  animation-duration: 4s;
+  animation-duration: 5s;
 }
     @keyframes fade {
       0%   {opacity:0;}
-      40%  {opacity:0;}
+      60%  {opacity:0;}
       100% {opacity:1;}
     }
     .dg {
@@ -369,6 +370,8 @@ h1, h2, p {
         display: none;
       }
     }
+
+
 
 
 
@@ -436,7 +439,8 @@ h1, h2, p {
 }
     @media (max-width: 600px) {
       .item-description {
-        margin-left: 3vw;
+        margin-left: 0vw;
+        width: 100%;
       }
     }
 .item-last {
@@ -616,6 +620,10 @@ video {
 .mobile-margin-top {
   margin-top: 30px;
 }
+
+
+
+
 
 /* ---------   Desktop Fixes   -------- */
 .padding-left-15 {

@@ -19706,7 +19706,7 @@
                 AddColor: !0,
                 Visualize: "Velocity",
                 Mode: "Luminance",
-                Timestep: "1/60",
+                Timestep: "1/120",
                 Reset: () => {
                     z.update({ inputTexture: U, velocity: U }), F.update({ inputTexture: B, velocity: U }), (D = void 0), (O = void 0);
                 },
