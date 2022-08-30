@@ -428,6 +428,11 @@ h1, h2, p {
   position: relative;
   margin-bottom: 12vw;
 }
+    @media (max-width: 600px) {
+      .slider-wrapper {
+        margin-bottom: 24vw;
+      }
+    }
 
 .swiper {
   width: 100%;
@@ -524,6 +529,7 @@ h1, h2, p {
     @media (max-width: 600px) {
       .project-wrapper-static {
         display: block;
+        margin-bottom: 24vw;
         margin-left: 3vw;
         margin-right: 3vw;
       }
@@ -589,6 +595,7 @@ h1, h2, p {
       .project-wrapper-static-full {
         margin-left: 3vw;
         margin-right: 3vw;
+        margin-bottom: 24vw;
       }
     }
 video {
