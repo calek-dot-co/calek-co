@@ -19690,7 +19690,7 @@
             g = ["gradient.jpg"],
             y = [];
         !(function () {
-            const e = new i.TextureLoader().setPath("./resources/");
+            const e = new i.TextureLoader().setPath("./js/resources/");
             for (let t = 0; t < g.length; ++t)
                 e.load(g[t], (e) => {
                     y[t] = e;
@@ -19705,7 +19705,7 @@
                 Boundaries: 0,
                 AddColor: !0,
                 Visualize: "Velocity",
-                Mode: "Luminance",
+                Mode: "Gradient",
                 Timestep: "1/120",
                 Reset: () => {
                     z.update({ inputTexture: U, velocity: U }), F.update({ inputTexture: B, velocity: U }), (D = void 0), (O = void 0);
