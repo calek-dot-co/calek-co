@@ -298,7 +298,14 @@ h1, h2, p {
         padding-bottom: 216px;
       }
     }
-
+.contact-message {
+   margin-bottom: 3vw;
+}
+    @media (max-width: 600px) {
+      .contact-message {
+         margin-bottom: 6vw;
+      }
+    }
 
 
 
