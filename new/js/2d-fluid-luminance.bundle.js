@@ -19763,7 +19763,7 @@
         const M = new i.WebGLRenderer({ canvas: _ });
         (M.autoClear = !1), M.setSize(window.innerWidth, window.innerHeight), M.setPixelRatio(window.devicePixelRatio);
         const S = new i.OrthographicCamera(0, 0, 0, 0, 0, 0);
-        let E = 1 / 60;
+        let E = 1 / 120;
         (M.context.getExtension("OES_texture_half_float") && M.context.getExtension("OES_texture_half_float_linear")) || alert("This demo is not supported on your device.");
         const T = new i.Vector2(x.Scale * window.innerWidth, x.Scale * window.innerHeight),
             A = new i.Vector2(T.x / T.y, 1),
