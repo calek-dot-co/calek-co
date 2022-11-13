@@ -27,80 +27,82 @@
     <div class="container-fluid" style="pointer-events: none;">
 
       <!-- - - - - - - - - Header - - - - - - - - -->
-      <div class="header">
+      <div class="header" style="height: auto;">
         <div class="row">
-          <div class="col-md-4 order-md-5">
+          <div class="col-md-4 order-md-5 no-gutters">
             <div class="menu-wrapper">
-              <a class="menu-link" href="index.html" style="mix-blend-mode: difference;" title="Find out more about Luke">About</a>
-              <a class="menu-link menu-link-inactive" style="mix-blend-mode: difference;" href="work.html" title="View Luke's recent work">Work</a>
-              <a class="menu-link menu-link-inactive" style="mix-blend-mode: difference;" href="contact.html" title="Contact Luke">Contact</a>
+              <a class="link link-menu link-inactive" href="index.html" title="An introduction to Luke">Intro</a>
+              <a class="link link-menu" href="work.html" title="Luke's recent work">Work</a>
+              <a class="link link-menu" href="about.html" title="About Luke">About</a>
             </div>
           </div>
-          <div class="col-md-8 order-md-1">
-            <h1 style="margin-bottom: 1vw;">Luke Caish-Sadlek</h1>
-            <h2 >Experience Designer & Director</h2>
+          <div class="col-md-8 order-md-1 no-gutters">
+            <h1 class="text-large" style="margin-bottom: 1vw;">Luke Caish-Sadlek</h1>
+            <h2 class="text-large" >Experience Design Director</h2>
           </div>
         </div>
       </div>
 
+
       <!-- - - - - - - - - About - - - - - - - - -->
-      <div class="row about" style="padding-top: 0;">
+      <div class="row about">
+        <div class="col-12 col-md-8 offset-md-2 no-gutters">
+          <lottie-player id="innovation" class="lottie lottie-first" src="images/animation_innovation.json" background="transparent"></lottie-player>
+        </div>
         <div class="col-md-10">
-          <p class="text2">Australian-born, Berlin-based, creative problem solver. Currently at <a class="menu-link menu-link-inactive link-large" style="margin-right: 0; mix-blend-mode: difference;" href="https://www.rga.com" target='_blank'>R/GA</a>.</p>
+          <p class="text-large">Creating new & relevant experiences starts with a deep understanding of the user & the opportunity.</p>
         </div>
       </div>
+
       <div class="row about">
-        <div class="col-md-8">
-          <p class="text3">My passion is creating engaging digital experiences at the intersections of needs.</p>
+        <div class="col-12 col-md-6">
+          <lottie-player id="needs" class="lottie" src="images/animation_needs.json" background="transparent"></lottie-player>
         </div>
-        <div class="col-12 col-md-10  svg">
-          <img class="svg-mobile text4" src="images/svg1m-user-business-tech.svg" alt="Venn-diagram of user needs, business needs and tech feasability intersecting."/>
-          <img class="svg1-desktop text4" src="images/svg1d-user-business-tech.svg" alt="Venn-diagram of user needs, business needs and tech feasability intersecting."/>
+        <div class="col-md-10">
+          <p class="text-large">Competing needs frame ideation – focusing solutions on the desirable,  the feasible & the realistic.</p>
         </div>
       </div>
+
       <div class="row about">
+        <div class="col-12 col-md-12 hidden-mobile">
+          <lottie-player id="process-desktop" class="lottie" src="images/animation_process-d.json" background="transparent"></lottie-player>
+        </div>
+        <div class="col-12 col-md-12 hidden-desktop">
+          <lottie-player id="process-mobile" class="lottie" src="images/animation_process-m.json" background="transparent"></lottie-player>
+        </div>
         <div class="col-md-9">
-          <p class="text4">Innovative experiences start by understanding the user’s mindset, culture and behaviour.</p>
-        </div>
-        <div class="col-12 col-md-10 svg">
-          <img class="svg-mobile text4" src="images/svg2m-innovation.svg" alt="Chart showing the connection between the user, their need, the opportunity, ideation and how they are connected to innovation."/>
-          <img class="svg2-desktop text4" src="images/svg2d-innovation.svg" alt="Chart showing the connection between the user, their need, the opportunity, ideation and how they are connected to innovation."/>
+          <p class="text-large" style="margin-bottom: 2vw;">Using a clear process, the complex can be made simple.</p>
+          <p class="text-large"> Together we can shape the future.</p>
         </div>
       </div>
-      <div class="row about">
-        <div class="col-md-8">
-          <p class="text4">And with a clear process, we can meet user needs and make the complex, simple.</p>
-        </div>
-        <div class="col-12 col-md-10 svg">
-          <img class="svg-mobile text4" src="images/svg3m-methods-tools.svg" alt="Icons of the six core methods I use in my creative process: understand, ideate, test, deliver, evolve and repeat."/>
-          <img class="svg3-desktop text4" src="images/svg3d-methods-tools.svg" alt="Icons of the six core methods I use in my creative process: understand, ideate, test, deliver, evolve and repeat."/>
-        </div>
-      </div>
-      <div class="row about">
-        <div class="col-md-9">
-          <p class="text4">Across products, services & spaces – I co-create with clients and users.</p>
-          <p class="text4 mobile-margin-top">Together we can create the future.</p>
-        </div>
-      </div>
+
 
       <!-- - - - - - - - - Footer - - - - - - - - -->
       <div class="footer">
         <div class="row">
+          <div class="col-12">
+            <lottie-player id="arrow-down" class="lottie arrow-explore" src="images/arrow-down-white.json" background="transparent"></lottie-player>
+          </div>
           <div class="col-md-10">
-            <a class="menu-link menu-link-inactive link-large text4" style="margin-bottom: 2vw; mix-blend-mode: difference;" href="work.html" title="View Luke's recent work">Work</a><br><br><br>
-            <a class="menu-link menu-link-inactive link-large text4" href="contact.html" style="mix-blend-mode: difference;" title="Contact Luke">Contact</a>
+            <a class="link text-large" href="work.html" title="Recent work">Recent work</a>
           </div>
         </div>
       </div>
 
+
     <!-- End Container -->
     </div>
 
+
     <!-- - - - - - - - - Background - - - - - - - - -->
-    <canvas id="canvas" class="background" style="mix-blend-mode: difference;"></canvas>
+    <!-- <canvas id="canvas" class="background" style="mix-blend-mode: difference;"></canvas> -->
+
 
     <!-- - - - - - - - - Scripts - - - - - - - - -->
-    <script src="js/2d-fluid-luminance.bundle.js"></script>
+    <script src="js/lottie-player.js"></script>
+    <script src="js/lottie-interactivity.min.js"></script>
+    <script src="js/lottie-preferences.js"></script>
+    <!-- <script src="js/2d-fluid-luminance.bundle.js"></script> -->
 
 
   </body>
