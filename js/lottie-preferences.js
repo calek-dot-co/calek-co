@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
     mode: 'scroll',
     actions: [
       {
-        visibility: [.2, .85],
+        visibility: [.25, .85],
         type: 'seek',
-        frames: [0, 359],
+        frames: [0, 719],
       },
     ],
   });
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         visibility: [0.25, 0.65],
         type: 'seek',
-        frames: [0, 240],
+        frames: [0, 480],
       },
     ],
   });
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         visibility: [0.2, 0.65],
         type: 'seek',
-        frames: [0, 390],
+        frames: [0, 750],
       },
     ],
   });
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
       {
         visibility: [0.2, 0.65],
         type: 'seek',
-        frames: [0, 390],
+        frames: [0, 750],
       },
     ],
   });
