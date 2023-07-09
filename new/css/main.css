@@ -58,7 +58,7 @@ h1, h2, h3, p, a {
 }
     @media (max-width: 600px) {
       h1, h2, h3, p, a {
-        font-size: 18px;
+        font-size: 20px;
         margin-bottom: 3vw;
       }
     }
