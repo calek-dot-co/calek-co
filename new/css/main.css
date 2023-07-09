@@ -204,14 +204,16 @@ h1, h2, h3, p, a {
       }
     }
 
+
 .project-spacer {
-  padding-bottom: 3vw;
+  padding-bottom: 5vw;
 }
     @media (max-width: 600px) {
       .project-spacer {
         padding-bottom: 18vw;
       }
     }
+
 
 @media (min-width: 601px) {
   .project-left {
@@ -221,10 +223,10 @@ h1, h2, h3, p, a {
     padding-left: 3vw;
   }
   .project-offset-1 {
-  margin-top: -12.5vw;
+  margin-top: -14.5vw;
   }
   .project-offset-2 {
-    margin-top: -10vw;
+    margin-top: -12vw;
   }
 }
 
