@@ -1,0 +1,269 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/* ---------   Fonts   -------- */
+
+@font-face {
+    font-family: 'Circular Light';
+    src: url('../fonts/CircularStd-Light.woff2') format('woff2'),
+        url('../fonts/CircularStd-Light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Bold';
+    src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
+        url('../fonts/CircularStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+
+
+/* ---------   Default Overrides   -------- */
+
+html {
+}
+img, video {
+  width: 100%;
+}
+body {
+  margin: 0;
+  background-color: #000;
+}
+::selection {
+  background: #333333;
+}
+::-moz-selection {
+  background: #333333;
+}
+
+
+
+
+
+/* ---------   Text Styles   -------- */
+
+h1, h2, h3, p, a {
+  color: #fff;
+  font-family: 'Circular Light';
+  font-size: 2.5vw;
+  line-height: 1.35;
+  margin-bottom: 1.5vw;
+}
+    @media (max-width: 600px) {
+      h1, h2, h3, p, a {
+        font-size: 18px;
+        margin-bottom: 3vw;
+      }
+    }
+    @media (min-width: 1801px) {
+      h1, h2, h3, p, a {
+        font-size: 36px;
+      }
+    }
+
+
+.text-small {
+  color: #fff;
+  font-family: 'Circular Light';
+  font-size: 1.8vw;
+  line-height: 1.4;
+  margin-bottom: .75vw;
+}
+    @media (max-width: 600px) {
+      .text-small {
+        font-size: 16px;
+      }
+    }
+    @media (min-width: 1801px) {
+      .text-small {
+        font-size: 33px;
+      }
+    }
+
+
+.text-tag {
+  color: #fff;
+  font-family: 'Circular Bold';
+  font-size: 1.2vw;
+  line-height: 1;
+  text-transform: uppercase;
+}
+    @media (max-width: 600px) {
+      .text-tag {
+        font-size: 12px;
+      }
+    }
+    @media (min-width: 1801px) {
+      .text-tag {
+        font-size: 18px;
+      }
+    }
+
+
+
+.name {
+  display: inline;
+}
+.text-project {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+    @media (max-width: 600px) {
+      .text-project {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+      }
+    }
+.text-padding-right {
+  padding-right: 20%;
+}
+
+
+.text-link, .text-link:hover {
+  border-bottom: 2px solid;
+  border-bottom-color: #fff;
+  margin-bottom: 0.5vw;
+}
+.text-link:hover {
+  color: #777;
+  border-bottom-color: #777;
+  text-decoration: none;
+}
+.menu-link {
+  display: inline;
+  float: right;
+}
+.menu-link-margin {
+  margin-left: 2vw;
+}
+
+
+
+
+
+
+/* ---------   Layout   -------- */
+
+.container-fluid {
+  max-width: 1800px;
+}
+
+
+.header {
+  padding: 6vw;
+}
+    @media (max-width: 600px) {
+      .header {
+        padding: 6vw;
+        padding-top: 9vw;
+        padding-bottom: 18vw;
+      }
+    }
+    @media (min-width: 1801px) {
+      .header {
+        padding: 108px;
+      }
+    }
+
+
+.intro {
+  padding: 6vw;
+}
+    @media (max-width: 600px) {
+      .intro {
+        padding: 6vw;
+        padding-bottom: 18vw;
+      }
+    }
+    @media (min-width: 1801px) {
+      .intro {
+        padding: 108px;
+      }
+    }
+
+
+.work {
+  padding: 6vw;
+}
+    @media (max-width: 600px) {
+      .work {
+        padding: 6vw;
+        padding-bottom: 18vw;
+      }
+    }
+    @media (min-width: 1801px) {
+      .work {
+        padding: 108px;
+      }
+    }
+
+.project-spacer {
+  padding-bottom: 3vw;
+}
+    @media (max-width: 600px) {
+      .project-spacer {
+        padding-bottom: 18vw;
+      }
+    }
+
+@media (min-width: 601px) {
+  .project-left {
+    padding-right: 3vw;
+  }
+  .project-right {
+    padding-left: 3vw;
+  }
+  .project-offset-1 {
+  margin-top: -12.5vw;
+  }
+  .project-offset-2 {
+    margin-top: -10vw;
+  }
+}
+
+
+.about {
+  padding: 6vw;
+}
+    @media (max-width: 600px) {
+      .about {
+        padding: 6vw;
+        padding-bottom: 18vw;
+      }
+    }
+    @media (min-width: 1801px) {
+      .about {
+        padding: 108px;
+      }
+    }
+
+.footer {
+  padding: 6vw;
+  padding-bottom: 12vw;
+}
+    @media (max-width: 600px) {
+      .footer {
+        padding: 6vw;
+        padding-bottom: 36vh;
+      }
+    }
+    @media (min-width: 1801px) {
+      .footer {
+        padding: 108px;
+        padding-bottom: 324px;
+      }
+    }
+
+
+
+
+
+
+
