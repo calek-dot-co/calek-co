@@ -223,6 +223,9 @@ h1, h2, h3, p, a {
 .project-spacer {
   padding-bottom: 5vw;
 }
+.lottie {
+        margin-top: .5vw;
+}
     @media (max-width: 600px) {
       .project-spacer {
         padding-bottom: 18vw;
