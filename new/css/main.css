@@ -37,10 +37,10 @@ body {
   background-color: #000;
 }
 ::selection {
-  background: #333333;
+  background: #999999;
 }
 ::-moz-selection {
-  background: #333333;
+  background: #999999;
 }
 
 
@@ -74,11 +74,12 @@ h1, h2, h3, p, a {
   font-family: 'Circular Light';
   font-size: 1.8vw;
   line-height: 1.4;
-  margin-bottom: .75vw;
+  margin-bottom: 1.5vw;
 }
     @media (max-width: 600px) {
       .text-small {
         font-size: 16px;
+        margin-bottom: 3vw;
       }
     }
     @media (min-width: 1801px) {
@@ -111,6 +112,14 @@ h1, h2, h3, p, a {
 .name {
   display: inline;
 }
+@media (max-width: 600px) {
+  .home-link {
+  margin-bottom: 18vw;
+}
+}
+.text-faded {
+  color: #999999;
+}
 .text-project {
   margin-top: 1vw;
   margin-bottom: 1vw;
@@ -133,9 +142,15 @@ h1, h2, h3, p, a {
 }
 .text-link:hover {
   color: #777;
+  border-bottom: 2px solid;
   border-bottom-color: #777;
   text-decoration: none;
 }
+.text-link-no-line {
+  border-bottom: 0px;
+}
+
+
 .menu-link {
   display: inline;
   float: right;
@@ -212,8 +227,18 @@ h1, h2, h3, p, a {
       .project-spacer {
         padding-bottom: 18vw;
       }
+      .lottie {
+        margin-top: 6vw;
+      }
     }
-
+.project-image {
+  margin-bottom: 1.5vw;
+}
+    @media (max-width: 600px) {
+      .project-image {
+        margin-bottom: 6vw;
+      }
+    }
 
 @media (min-width: 601px) {
   .project-left {
@@ -223,12 +248,13 @@ h1, h2, h3, p, a {
     padding-left: 3vw;
   }
   .project-offset-1 {
-  margin-top: -14.5vw;
+  margin-top: 18vw;
   }
   .project-offset-2 {
-    margin-top: -12vw;
+    margin-top: 36vw;
   }
 }
+
 
 
 .about {
@@ -253,7 +279,7 @@ h1, h2, h3, p, a {
     @media (max-width: 600px) {
       .footer {
         padding: 6vw;
-        padding-bottom: 36vh;
+        padding-bottom: 18vh;
       }
     }
     @media (min-width: 1801px) {
