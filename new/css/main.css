@@ -318,7 +318,7 @@ h1, h2, h3, p, a {
 @media (max-width: 600px) {
       .profile-image {
         padding-top: 0vw;
-        padding-bottom: 6vw;
+        padding-bottom: 12vw;
       }
     }
 
@@ -347,7 +347,7 @@ h1, h2, h3, p, a {
 
 
 .arrow-explore {
-  max-width: 100px;
+  max-width: 80px;
 }
 .lottie {
   margin-top: .5vw;
