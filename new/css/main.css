@@ -35,6 +35,7 @@ img, video {
 body {
   margin: 0;
   background-color: #000;
+  overflow-x: hidden;
 }
 ::selection {
   background: #999999;
@@ -52,7 +53,7 @@ body {
 h1, h2, h3, p, a {
   color: #fff;
   font-family: 'Circular Light';
-  font-size: 2.5vw;
+  font-size: 2vw;
   line-height: 1.35;
   margin-bottom: 1.5vw;
 }
@@ -120,6 +121,9 @@ h1, h2, h3, p, a {
 .text-faded {
   color: #999999;
 }
+.text-black {
+  color: #000;
+}
 .text-project {
   margin-top: 1vw;
   margin-bottom: 1vw;
@@ -135,6 +139,7 @@ h1, h2, h3, p, a {
 }
 
 
+
 .text-link, .text-link:hover {
   border-bottom: 2px solid;
   border-bottom-color: #fff;
@@ -146,6 +151,19 @@ h1, h2, h3, p, a {
   border-bottom-color: #777;
   text-decoration: none;
 }
+
+.text-link-black, .text-link-black:hover {
+  border-bottom: 2px solid;
+  border-bottom-color: #000;
+  margin-bottom: 0.5vw;
+}
+.text-link-black:hover {
+  color: #777;
+  border-bottom: 2px solid;
+  border-bottom-color: #777;
+  text-decoration: none;
+}
+
 .text-link-no-line {
   border-bottom: 0px;
 }
@@ -158,6 +176,17 @@ h1, h2, h3, p, a {
 .menu-link-margin {
   margin-left: 2vw;
 }
+    @media (max-width: 600px) {
+      .menu-link {
+        display: inline;
+        float: left;
+      }
+
+      .menu-link-margin {
+        margin-left: 0vw;
+        margin-right: 2vw;
+      }
+    }
 
 
 
@@ -223,40 +252,39 @@ h1, h2, h3, p, a {
 .project-spacer {
   padding-bottom: 5vw;
 }
-.lottie {
-        margin-top: .5vw;
+.project-wrapper {
+  overflow-x: scroll;
+  overflow: visible;
+}
+.project-image {
+  margin-bottom: 1.5vw;
+  height: 500px;
+  width: auto;
 }
     @media (max-width: 600px) {
       .project-spacer {
         padding-bottom: 18vw;
       }
-      .lottie {
-        margin-top: 6vw;
-      }
-    }
-.project-image {
-  margin-bottom: 1.5vw;
-}
-    @media (max-width: 600px) {
       .project-image {
         margin-bottom: 6vw;
       }
     }
 
-@media (min-width: 601px) {
-  .project-left {
-    padding-right: 3vw;
-  }
-  .project-right {
-    padding-left: 3vw;
-  }
-  .project-offset-1 {
-  margin-top: 18vw;
-  }
-  .project-offset-2 {
-    margin-top: 36vw;
-  }
-}
+
+    @media (min-width: 601px) {
+      .project-left {
+        padding-right: 3vw;
+      }
+      .project-right {
+        padding-left: 3vw;
+      }
+      .project-offset-1 {
+      margin-top: 18vw;
+      }
+      .project-offset-2 {
+        margin-top: 36vw;
+      }
+    }
 
 
 
@@ -274,6 +302,26 @@ h1, h2, h3, p, a {
         padding: 108px;
       }
     }
+
+.section-spacer {
+  margin-bottom: 12vw;
+}
+    @media (max-width: 600px) {
+      .section-spacer {
+        margin-bottom: 24vw;
+      }
+    }
+
+.profile-image {
+        padding-top: .5vw;
+      }
+@media (max-width: 600px) {
+      .profile-image {
+        padding-top: 0vw;
+        padding-bottom: 6vw;
+      }
+    }
+
 
 .footer {
   padding: 6vw;
@@ -295,6 +343,23 @@ h1, h2, h3, p, a {
 
 
 
+/* ---------   Arrow & Lottie   -------- */
+
+
+.arrow-explore {
+  max-width: 100px;
+}
+.lottie {
+  margin-top: .5vw;
+}
+    @media (max-width: 600px) {
+      .arrow-explore {
+        max-width: 12vw;
+      }
+      .lottie {
+        margin-top: 6vw;
+      }
+    }
 
 
 
