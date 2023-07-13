@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     mode: 'scroll',
     actions: [
       {
-        visibility: [.3, .8],
+        visibility: [.2, .8],
         type: 'seek',
         frames: [0, 719],
       },
