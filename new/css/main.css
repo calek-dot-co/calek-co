@@ -377,9 +377,9 @@ h1, h2, h3, p, a {
   outline: none;
   transition: 0.4s;
   padding: 0;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-  margin-top: 3vw;
+/*  padding-top: 1vw;
+  padding-bottom: 1vw;*/
+  margin-bottom: 3vw;
 }
 
 .active, .accordion:hover {
@@ -388,11 +388,11 @@ h1, h2, h3, p, a {
 .panel {
   display: none;
   overflow: hidden;
-  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
     @media (max-width: 600px) {
       .panel {
-        padding-top: 3vw;
+/*        padding-top: 3vw;*/
       }
     }
 
@@ -411,6 +411,11 @@ h1, h2, h3, p, a {
 .slider-wrapper {
   position: relative;
 }
+    @media (max-width: 600px) {
+      .slider-wrapper {
+        margin-top: 2vw;
+      }
+    }
 
 .swiper {
   width: auto;
