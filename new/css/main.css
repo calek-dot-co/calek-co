@@ -73,7 +73,7 @@ h1, h2, h3, p, a {
 .text-small {
   color: #fff;
   font-family: 'Circular Light';
-  font-size: 1.8vw;
+  font-size: 1.2vw;
   line-height: 1.4;
   margin-bottom: 1.5vw;
 }
@@ -142,13 +142,13 @@ h1, h2, h3, p, a {
 
 .text-link, .text-link:hover {
   border-bottom: 2px solid;
-  border-bottom-color: #fff;
+  border-bottom-color: #FFF;
   margin-bottom: 0.5vw;
 }
 .text-link:hover {
-  color: #777;
+  color: #DFDFDF;
   border-bottom: 2px solid;
-  border-bottom-color: #777;
+  border-bottom-color: #DFDFDF;
   text-decoration: none;
 }
 
@@ -158,9 +158,9 @@ h1, h2, h3, p, a {
   margin-bottom: 0.5vw;
 }
 .text-link-black:hover {
-  color: #777;
+  color: #5F5F5F;
   border-bottom: 2px solid;
-  border-bottom-color: #777;
+  border-bottom-color: #5F5F5F;
   text-decoration: none;
 }
 
@@ -251,6 +251,9 @@ h1, h2, h3, p, a {
 
 .project-spacer {
   padding-bottom: 5vw;
+}
+.padding-top {
+  padding-top: 5vw;
 }
 .project-wrapper {
   overflow-x: scroll;
@@ -361,5 +364,107 @@ h1, h2, h3, p, a {
       }
     }
 
+
+
+
+/* ---------   Accordion   -------- */
+
+
+.accordion {
+  width: auto;
+  background-color: #000;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  padding: 0;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  margin-top: 3vw;
+}
+
+.active, .accordion:hover {
+}
+
+.panel {
+  display: none;
+  overflow: hidden;
+  padding-top: 1vw;
+}
+    @media (max-width: 600px) {
+      .panel {
+        padding-top: 3vw;
+      }
+    }
+
+.text-no-margin, .text-no-margin:hover {
+  margin-bottom: 0;
+}
+
+
+
+
+/* ---------   Carousel / Slider   -------- */
+
+
+/* -- Slider config --- */
+
+.slider-wrapper {
+  position: relative;
+}
+
+.swiper {
+  width: auto;
+  height: 100%;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.row, .max-row, .col-md-12, .project-wrapper, .slider-wrapper, .swiper, .mySwiper, .swiper-wrapper {
+  overflow: visible !important;
+}
+
+.slider-content-text {
+  max-width: 41.6vw;
+}
+.slider-content-image {
+  width: fit-content !important;
+}
+
+
+/* -- Image sizing --- */
+
+.img-main {
+  height: 50vw;
+  width: auto;
+}
+    @media (max-width: 600px) {
+      .img-main {
+        height: 100vw;
+        width: auto;
+      }
+    }
+
+
+/* -- Mobile/desktop content fixes --- */
+
+@media (max-width: 600px) {
+  .hidden-desktop {
+    display: none !important;
+  }
+}
+@media (min-width: 601px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+
+/* -- Scroll GIF --- */
+
+.scroll-prompt {
+  width: 40px;
+  height: auto;
+  margin-top: -2px;
+}
 
 
