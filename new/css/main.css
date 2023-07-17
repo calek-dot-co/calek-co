@@ -318,12 +318,23 @@ h1, h2, h3, p, a {
 .profile-image {
         padding-top: .5vw;
       }
-@media (max-width: 600px) {
+    @media (max-width: 600px) {
       .profile-image {
         padding-top: 0vw;
         padding-bottom: 12vw;
       }
     }
+
+@media (max-width: 600px) {
+  .youtube-image {
+      margin-top: 3vw;
+  }
+  .mobile-arrow {
+    margin-top: 3vw;
+  }
+}
+
+    
 
 
 .footer {
@@ -413,6 +424,9 @@ h1, h2, h3, p, a {
 }
     @media (max-width: 600px) {
       .slider-wrapper {
+        margin-top: 2vw;
+      }
+      .none-slider-wrapper {
         margin-top: 2vw;
       }
     }
