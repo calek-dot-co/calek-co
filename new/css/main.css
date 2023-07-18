@@ -436,9 +436,9 @@ h1, h2, h3, p, a {
 .swiper {
   width: auto;
   height: 100%;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+/*  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;*/
 }
 .row, .max-row, .col-md-12, .project-wrapper, .slider-wrapper, .swiper, .mySwiper, .swiper-wrapper {
   overflow: visible !important;
@@ -482,10 +482,21 @@ h1, h2, h3, p, a {
 
 /* -- Scroll GIF --- */
 
+.scroll-arrow {
+  margin-top: 1vw;
+}
+    @media (max-width: 600px) {
+      .scroll-arrow {
+        margin-top: 3vw;
+      }
+    }
+
 .scroll-prompt {
   width: 40px;
   height: auto;
   margin-top: -2px;
 }
+
+
 
 
