@@ -445,8 +445,40 @@ h1, h2, h3, p, a {
 }
 
 .slider-content-text {
-  max-width: 41.6vw;
+  max-width: 41.1vw;
 }
+    @media (min-width: 800px) {
+      .slider-content-text {
+        max-width: 41.3vw;
+      }
+    }
+    @media (min-width: 900px) {
+      .slider-content-text {
+        max-width: 41.4vw;
+      }
+    }
+    @media (min-width: 1000px) {
+      .slider-content-text {
+        max-width: 41.5vw;
+      }
+    }
+    @media (min-width: 1200px) {
+      .slider-content-text {
+        max-width: 41.7vw;
+      }
+    }
+    @media (min-width: 1400px) {
+      .slider-content-text {
+        max-width: 41.9vw;
+      }
+    }
+    @media (min-width: 1600px) {
+      .slider-content-text {
+        max-width: 42.15vw;
+      }
+    }
+
+
 .slider-content-image {
   width: fit-content !important;
 }
