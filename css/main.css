@@ -477,6 +477,26 @@ h1, h2, h3, p, a {
         max-width: 42.15vw;
       }
     }
+    @media (min-width: 1800px) {
+      .slider-content-text {
+        max-width: 42.35vw;
+      }
+    }
+    @media (min-width: 2000px) {
+      .slider-content-text {
+        max-width: 42.55vw;
+      }
+    }
+    @media (min-width: 2200px) {
+      .slider-content-text {
+        max-width: 42.75vw;
+      }
+    }
+    @media (min-width: 2400px) {
+      .slider-content-text {
+        max-width: 42.95vw;
+      }
+    }
 
 
 .slider-content-image {
@@ -487,12 +507,12 @@ h1, h2, h3, p, a {
 /* -- Image sizing --- */
 
 .img-main {
-  height: 50vw;
+  height: 40vw;
   width: auto;
 }
     @media (max-width: 600px) {
       .img-main {
-        height: 100vw;
+        height: 70vw;
         width: auto;
       }
     }
