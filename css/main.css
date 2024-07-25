@@ -484,17 +484,7 @@ h1, h2, h3, p, a {
     }
     @media (min-width: 2000px) {
       .slider-content-text {
-        max-width: 42.55vw;
-      }
-    }
-    @media (min-width: 2200px) {
-      .slider-content-text {
-        max-width: 42.75vw;
-      }
-    }
-    @media (min-width: 2400px) {
-      .slider-content-text {
-        max-width: 42.95vw;
+        max-width: 762px;
       }
     }
 
